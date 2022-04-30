@@ -66,15 +66,17 @@ header{
 }
 
 .bottom-container__top-right-menu {
-    display: flex;
+    display: block;
+    width: 24%;
 }
 
-.bottom-container__top-right-menu > ul > li > a {
+.bottom-container__top-right-menu ul {
     display: flex;
-    flex-direction: row;
-    width: calc(50% - 12px);
-    position: relative;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 20px;
 }
+
 
 .bottom-container__center-menu {
     display: block;
