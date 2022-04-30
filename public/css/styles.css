@@ -5,6 +5,18 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.articulo{
+    display:inline-block;
+    /*align-items:flex-end;*/
+    
+}
+
+.seccion_main{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+}
+
 header{
     background-color: white;  
 }
@@ -84,13 +96,20 @@ header{
 .bottom-container__center-menu li {
     margin: 0 15px;
 }
-
-.bottom-container__center-menu a {
-    
-}
-
-
 .product-item_img{
     background-color: #fff;
     margin-bottom: 15px;
+    height: 40vh;
+    width: 20px;
+    display:inline-flex;
+    margin-top:10px;
+}
+
+.section_footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.info_footer {
+    text-align: center;
 }
