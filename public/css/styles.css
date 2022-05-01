@@ -115,3 +115,38 @@ header{
 .info_footer {
     text-align: center;
 }
+
+
+/***************LOGIN*****************/
+
+.login-title {
+    display: flex;
+}
+.a,
+.b {
+    width: 50%;
+}
+
+.login-data {
+    display: flex;
+    justify-content: center;
+}
+
+.login-type {
+    text-align: center;
+}
+
+/***************REGISTER****************/
+
+.register-title {
+    display: flex;
+
+}
+.register-data {
+    display: flex;
+    justify-content: center;
+}
+
+.register-type {
+    text-align: center;
+}
