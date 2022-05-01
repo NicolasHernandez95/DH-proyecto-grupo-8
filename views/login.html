@@ -4,9 +4,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/29b5584878.js" crossorigin="anonymous"></script>
+    <title>Digital Shirts | Login</title>
 </head>
+
 <body>
-    
+    <header>
+        <div>
+        <!-- Header TOP (Logo, Search-Bar, Text) -->
+        <section class="up-section">
+        <!-- Header TOP LOGO -->
+        <div class="up-section-img_Logo">
+            <img src="img/logoDS22.jpeg" alt="Logo Digital Shirts">
+        </div>
+        <!-- Header TOP SEARCH-BAR -->
+        <div class="top-container__search-bar">
+            <button class="search-bar__btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <input class="search-bar__input" type="text" placeholder="Buscar camiseta!">
+        </div>
+        <div class="bottom-container__top-right-menu">
+            <ul>
+                <li><a href="/login"><i class="fa-solid fa-user"></i></a></li>
+                <li><a href="/favorite"><i class="fa-solid fa-heart"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </div>
+        </section>
+        <!-- Header BOTTOM MENU -->
+        <section class="bottom-container__center-menu">
+        <div class="botom-container__center-menu-option">
+            <ul>
+                <li><a href="#">Categorías</a></li>
+                <li><a href="#">Hombre</a></li>
+                <li><a href="#">Mujer</a></li>
+                <li><a href="#">Infantil</a></li>
+                <li><a href="#">Marcas</a></li>
+                <li><a href="#">Ofertas</a></li>
+            </ul>
+        </div>
+        </section>
+        <!-- Header HAMBURGER MENU -->
+        <section class="hamburger-container">
+        <nav class="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </nav>
+        </section>
+        </div>
+    </header>
+
+    <main>
+        <h2>Iniciar Sesión</h2>
+        <section>
+            <form action="/" method="POST">
+            <div>
+                <label for="email">*Email</label><br>
+                <input type="email" id="user-email" name="user-email" placeholder="E-mail" value="">
+            </div>
+            <div>
+                <label for="password">*Contraseña</label><br>
+                <input type="password" id="password" name="password" placeholder="Ingrese su contraseña" value="">
+            </div>
+            <div>
+                <input type="checkbox" id="recordarme" name="recordarme" value="recordarme">
+                <label for="recordarme">Recordarme</label><br>
+            </div>
+            <div>
+                <a href="#">¿Olvidaste tu contraseña?</a>
+            </div>
+            <div>
+                <input type="submit" value="Iniciar sesión">
+                </div>
+            </form>
+        </section>  
+    </main>
+
+    <footer>
+        <!--Footer CONTAINER-->
+        <section class="section_footer">
+            <!--Footer-->
+            <article class="info_footer">
+                <h3>Acerca de</h3>
+                <p>Quiénes Somos</p>
+                <p>Política de Privacidad</p>
+                <p>Términos y Condiciones</p>
+            </article>
+            <article class="info_footer">
+                <h3>Ayuda</h3>
+                <p>Preguntas Frecuentes</p>
+                <div><i class="fa-solid fa-location-dot"></i>Sucursales</div>
+                <p>Entregas</p>
+                <p>Cambios</p>
+            </article>
+            <article class="info_footer">
+                <h3>Redes Sociales</h3>
+                <div><i class="fa-brands fa-facebook"></i>Facebook</div>
+                <div><i class="fa-brands fa-instagram-square"></i>Instagram</div>
+                <div><i class="fa-brands fa-twitter"></i>Twitter</div>
+            </article>
+            <article class="info_footer">
+                <h3>Centro de Atención al Cliente</h3>
+                <div><i class="fa-solid fa-envelope"></i>Contacto</div>
+                <div><i class="fa-brands fa-whatsapp-square"></i>WhatsApp</div>
+                <div><i class="fa-solid fa-phone"></i>0800-666-2022</div>
+            </article>
+        </section>
+        <p>Copyright &copy; 2022 Digital Shirts S.R.L</p>
+    </footer>
 </body>
 </html>
