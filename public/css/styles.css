@@ -5,17 +5,8 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.articulo{
-    display:inline-block;
-    /*align-items:flex-end;*/
-    
-}
+/****************HEADER************/
 
-.seccion_main{
-    display: flex;
-    align-items:center;
-    justify-content: space-around;
-}
 
 header{
     background-color: white;  
@@ -37,7 +28,7 @@ header{
     height:180px;
     display: block;
     position: relative;
-
+    
 }
 .top-container__search-bar {
     display: flex;
@@ -66,15 +57,21 @@ header{
 }
 
 .bottom-container__top-right-menu {
-    display: block;
-    width: 20%;
-}
-
-.bottom-container__top-right-menu ul {
     display: flex;
     justify-content: flex-end;
+    font-size: 40px;
+    width: 18%;
+}
+
+.bottom-container__top-right-menu ul, li {
+    display: flex;
     list-style: none;
-    padding: 20px;
+    padding: 10px;
+}
+
+.bottom-container__top-right-menu .fa-solid {
+    color: black;
+    font-size: 40px;
 }
 
 
@@ -84,7 +81,7 @@ header{
     margin: 0;
     padding: 0;
     border: dotted 2px red;
-    
+    text-decoration: none;
 }
 
 .bottom-container__center-menu ul {
@@ -95,9 +92,13 @@ header{
     list-style: none;
 }
 
-.bottom-container__center-menu li {
-    margin: 0 15px;
+.bottom-selection {
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
 }
+
 .product-item_img{
     background-color: #fff;
     margin-bottom: 15px;
@@ -107,6 +108,29 @@ header{
     margin-top:10px;
 }
 
+
+/*****************MAIN****************************/
+
+.articulo{
+    display:inline-block;
+    /*align-items:flex-end;*/
+    
+}
+
+.seccion_main{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+}
+
+/******************FOOTER***********************/
+
+.footer {
+    border: solid 2px black;
+    padding: 20px 0;
+    margin: 40px 40px;
+
+}
 .section_footer {
     display: flex;
     justify-content: space-around;
@@ -116,24 +140,74 @@ header{
     text-align: center;
 }
 
+.info_footer p, div {
+    margin: 10px;
+}
+
 
 /***************LOGIN*****************/
 
 .login-title {
     display: flex;
 }
-.a,
-.b {
+
+.login-title .session-title {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: end;
+    padding: 0 110px;
+}
+
+.login-title .session-register {
+    font-size: 20px;
+    font-weight: 700;
+    opacity: 0.3;
+    color: black;
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+.session-title,
+.session-register {
     width: 50%;
 }
 
 .login-data {
     display: flex;
     justify-content: center;
+    width: 100%;
+}    
+
+.table {
+    height: 40px;
+    width: 400px;
+    margin: 15px 0 15px;
 }
 
 .login-type {
-    text-align: center;
+    align-items: center;
+}
+
+.login-type-options {
+    display: flex;
+    width: 100% ;
+}
+
+.login-type-options, .a {
+    margin-right: 10px;
+}
+
+.login-type-options, .b{
+    margin-right: 100px;
+}
+.login-type-options, .c {
+    color: black;
+}
+
+.bottom-log-in {
+    height: 40px;
+    width: 400px;
+    margin-top: 20px;
 }
 
 /***************REGISTER****************/
@@ -142,6 +216,23 @@ header{
     display: flex;
 
 }
+
+.register-title .session-title {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    font-weight: 700;
+    opacity: 0.3;
+    color: black;
+    text-decoration: none;
+}
+
+.register-title .session-register {
+    display: flex;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
 .register-data {
     display: flex;
     justify-content: center;
@@ -149,4 +240,9 @@ header{
 
 .register-type {
     text-align: center;
+}
+
+.fa-brands, .fa-solid {
+    margin-right: 10px;
+    font-size: 20px;
 }
