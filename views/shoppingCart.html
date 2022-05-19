@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/29b5584878.js" crossorigin="anonymous"></script>
-    <title>Digital Shirts</title>
+    <title>Digital Shirts | cartshopping</title>
 </head>
 
 <body>
@@ -28,7 +28,7 @@
             <ul>
                 <li><a href="/login"><i class="fa-solid fa-user"></i></a></li>
                 <li><a href="/favorite"><i class="fa-solid fa-heart"></i></a></li>
-                <li><a href="/shoppingCart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </div>
         </section>
@@ -56,54 +56,34 @@
     </header>
 
     <main>
-        <!--Main BANNER-->
-        <section>
-            <img src="" alt="Home Banner"
-        </section>
-        <!--Section Destacados--> 
-        <h2>Destacados!</h2>
-        <section class="seccion_main">
-            <!--Section Item-->
-            <article class="articulo">
-                <!--Item-->
-                <div class="product-item_img">
-                    <img src="img/camisetaArgentina.jpg" alt="Camiseta de Argentina ">
-                </div>
-                <!--Item Info-->
-                <div>
-                    <p class="info-price">$1.200</p>
-                    <p class="info-discount">25% OFF</p>
-                </div>
-                <!--Item Title-->
-                <h3>Camiseta de Argentina</h3>
-                <!--El resto de los items sigue la misma estructura detallada arriba-->
-            </article>
-            <article class="articulo">
-                <!--Item-->
-                <div class="product-item_img">
-                    <img src="img/camisetaColombia.jpg" alt="Camiseta de Colombia ">
-                </div>
-                <!--Item Info-->
-                <div>
-                    <p class="info-price">$2.300</p>
-                    <p class="info-discount">20% OFF</p>
-                </div>
-                <!--Item Title-->
-                <h3>Camiseta de Colombia</h3>
-            </article>
-            <article class="articulo">
-                <!--Item-->
-                <div class="product-item_img">
-                    <img src="img/camisetaMexico.jpg" alt="Camiseta de Mexico ">
-                </div>
-                <!--Item Info-->
-                <div>
-                    <p class="info-price">$1.800</p>
-                    <p class="info-discount">30% OFF</p>
-                </div>
-                <!--Item Title-->
-                <h3>Camiseta de Mexico</h3>
-            </article>
+        <div>
+        <h3>Mi Carrito</h3>
+        <p>"" Productos</p>
+        </div>
+        <div>
+        <p><a href="/">Seguir Comprando</a></p>
+        </div>
+        <article class="info-cart" >
+            <div class="cart-img">
+            <img src="/img/camisetaColombia.jpg" alt="Producto" >
+            </div>
+            <div class="info-cart1">
+            <p class="info-1">Productos(1)</p>
+            <p class="info-2">camiseta de Colombia</p>
+            <p>Total $2.300</p>
+            <i class="fa-solid fa-trash-can"></i>
+            </div>
+        </article>
+        <section class="envio">
+            <div>Calcula el costo de envío <i class="fa-solid fa-truck"></i></div>
+            <div>
+            <button>Calcular</button>
+            <input type="number" id="cp" name="cp" placeholder="Código Postal">
+            </div>
+            <div>Costo de Envío $500</div>
+            <div>Subtotal $2300</div>
+            <div>Total $2800</div>
+            <button>Comprar</button>
         </section>
     </main>
 

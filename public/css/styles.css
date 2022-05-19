@@ -246,3 +246,42 @@ header{
     margin-right: 10px;
     font-size: 20px;
 }
+
+/***********************SHOPPINGCART**************/
+
+.cart-img {
+    display: flex;
+    width: 200px;
+    height: 200px;
+}
+
+.info-cart {
+    max-width: 60%;
+    border: dotted 2px red;
+    display: inline-flex;
+    align-content: center;
+}
+
+.info-1 {
+}
+
+.info-2 {
+    
+}
+
+.info-cart1 {
+    display: flex;
+}
+
+.info-1 p {
+}
+
+.info-cart i {
+    display: flex;
+    max-width: 20%;
+}
+
+.envio {
+    text-align: right;
+    line-height: 12px;
+}

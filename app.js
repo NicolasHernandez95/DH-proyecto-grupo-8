@@ -4,7 +4,7 @@ const path = require('path')
 const app = express();
 app.use(express.static('public'));
 
-app.listen(3000, ()=>{
+app.listen(3030, ()=>{
     console.log('Servidor funcionando');
 });
 
@@ -18,6 +18,10 @@ app.get('/register', (req, res) => {
 
 app.get('/login', (req,res) => {
     res.sendFile(path.resolve(__dirname, './views/login.html'))
+})
+
+app.get('/shoppingCart', (req,res) => {
+    res.sendFile(path.resolve(__dirname, './views/shoppingCart.html'))
 })
 
 app.post('/', (req, res) => {
